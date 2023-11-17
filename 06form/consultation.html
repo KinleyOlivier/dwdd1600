@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Curly Co: Home</title>
+        <link rel="stylesheet" href="curly.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&display=swap" rel="stylesheet">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="UTF-8">
+        <meta name="description" content="Learn to embrace your curl">
+        <meta name="author" content="McKinley Olivier">
+        
+    </head>
+    <body>
+        <!-- Start of the page header -->
+        <header>
+            <h1>Curly Co</h1>
+            <p>Learn to embrace your curl</p>
+        </header>
+        <!-- Start of the page navigation -->
+        <nav>
+            <ul>
+                <li><a href="index.html">Curl Types</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="curlhub.html">Curl Hub</a></li>
+                <li class="active"><a href="consultation.html">Curl Consultation</a></li>
+            </ul>
+        </nav>
+        <!-- Start of the page content -->
+        <main>
+            <h1>Curl Consultation</h1>
+            <form method="get" class="myForm" action="thanks.html">
+            
+            <fieldset>
+            <legend>Customer Information</legend>
+            <label>First Name*<input type="text" name="fname" required></label>
+            <label>Last Name*<input type="text" name="lname" required></label>    
+            <label>Cell Number*<input type="tel" name="phone" required></label>
+            <label>Email*<input type="email" name="email" required></label>
+            </fieldset>
+                
+            <fieldset>
+            <legend>Consultation Type</legend>
+                <label><input type="radio" name="type" value="curlhealth">Curl Health 101 (45min)</label> <label><input type="radio" name="type" value="curlcare">Intuitive Curl Care (1hr)</label>
+                <label><input type="radio" name="type" value="manipulating">Manipulating Your Curls (1.5hrs)</label>  
+            </fieldset>   
+                
+            <fieldset>
+            <legend>Consultation Options</legend>   
+                <label><input type="checkbox" name="type" value="zoom">Zoom Consultation </label> <label><input type="checkbox" name="type" value="call">Phone Call Consultation </label>
+                <label><input type="checkbox" name="type" value="inperson">In-person Consultation </label> 
+                
+                <label>
+                <select name="time">
+                <option value="none">Please Select</option>
+                <option value="morning">Between 7:00am and 11:00am</option>
+                <option value="noon">Between 11:00am and 2:00pm</option>
+                <option value="afternoon">Between 2:00pm and 5:00pm</option>       
+                </select>
+                </label>
+            </fieldset>    
+                
+                <label>Comments
+                    <textarea name="comments">Please describe your curly hair goals</textarea>
+                </label>
+                
+            
+            <input type="submit" value="Send Consultation Request">
+            </form>    
+        </main>
+        
+        
+        <!-- Start of the page footer -->
+        <footer>
+        <p>&copy; 2023 &bull; McKinley Olivier &bull; <a href="mailto:kinleyolivier@gmail.com">Email Us</a></p>
+        </footer>
+        
+    </body>
+</html>
